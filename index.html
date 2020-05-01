@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAPENDA_SARL</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <link rel="stylesheet" href="java.css">
+</head>
+
+<body>
+  <div class="ui-container">
+    <form class="ui form" id="formulaire">
+      <h1 class="ui center aligned icon header"><i class="circular users icon"></i>MAPENDO sarl </h1>
+      <input type="text" name="identifiant" id="id" value="" hidden>
+      <div class="field">
+        <label for="nom">Nom</label>
+        <input id="nom" type="text" name="nom" value="" placeholder="NYEMBO"  required>
+        <span class="erreur" id="erreurnom"></span>
+      </div>
+      <div class="field">
+        <label for="prenom">Prenom</label>
+        <input id="prenom" type="text" name="prenom" value="" placeholder="Thesy" required>
+        <span class="erreur" id='erreurprenom'></span>
+      </div>
+      <div class="field">
+      <label for="satutMarital">estMarie</label>
+      <select id='status' class="ui search dropdown" name="satutMarital" value="" required>
+        <option value=""></option>
+        <option value="Oui">Oui</option>
+        <option value="Non">Non</option>
+      </select>
+    </div>
+
+      <!-- <div class="field">
+        <label for="sexe">Sexe</label>
+        <input id="sexe" type="text" name="sexe" value="" placeholder="sexe" required>
+        <span class="erreur" id="erreursexe"></span> -->
+  <div class="field">
+    <label for="poste">Poste</label>
+    <input id="poste" type="text" name="poste" value="" placeholder="poste" required>
+    <span class="erreur" id="erreurposte"></span>
+  </div>
+  <div class="field">
+    <label for="numero">Numero Téléphone</label>
+    <input id="numero" type="text" name="last-name" value="" placeholder="+243823010561"   name="numero" required>
+    <span class="erreur" id="erreurnumero"></span>
+  </div>
+  <div class="field">
+    <label for="email">E-mail</label>
+    <input id="email" type="text" name="email" value="" placeholder="nyembothesy@gmail.com" required>
+    <span class="erreur" id="erreurmail"></span>
+  </div>
+  <div class="field">
+    <label for="pays">Pays d'origine</label>
+    <input id="pays" type="text" name="pays" value="" placeholder="pays" required>
+    <span class="erreur" id="erreurpays"></span>
+  </div>
+  <div class="field">
+    <div class="ui checkbox">
+      <input type="checkbox" tabindex="0" class="hidden">
+      <label>J'accepte les termes et conditions</label>
+    </div>
+  </div>
+  <button id="boutonAjouter" class="ui button" type="submit">Ajouter</button>
+  <button id="boutonModifier" class="ui button" type="submit">Mise à jour</button>
+  <!-- <input type="search" style="width: 100px;" id="recherche"> -->
+      <div>
+          
+      </div>
+  </form>
+  </div>
+  <hr>
+  <table id="table" class="ui striped table">
+    <h1 id='h11' class="ui red header">Tableau d'enregistrement</h1>
+    <hr>
+    <thead>
+      <tr>
+        <!-- <th>id</th> -->
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>estMarie</th>
+        <th>Poste</th>
+        <th>NumeroTelephone</th>
+        <th>E-mail</th>
+        <th>pays</th>
+      </tr>
+    </thead>
+    <tbody></tbody> 
+  </table>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="users.js"></script>
+</body>
+
+</html>
