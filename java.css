@@ -1,0 +1,37 @@
+.ui-container{
+    border: 2px solid #cacbcd;
+    border-radius: 50px;
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    margin-top:50px;
+    background-color: silver;
+   
+}
+.erreur {
+    color: red;
+  }
+#h11{
+    text-align: center;
+}
+#table{
+    width:90%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#boutonAjouter{
+    border-radius: 10px;
+    background-color: blue;
+}
+#boutonModifier{
+    border-radius: 10px;
+    background-color: yellow;
+
+}
+/* .btn-primary{
+    background-color: blue;
+}
+.btn-danger{
+    background-color: red;
+} */
